@@ -10,9 +10,9 @@ public interface StudentService {
 
     List<Student> getAllListStudent();
 
-    Optional<Student> getStudentById(Integer id);
+    Optional<Student> getStudentById(long id);
 
     void addStudent(Student student);
 
-    void deleteStudent(Integer id);
+    void deleteStudent(long id);
 }

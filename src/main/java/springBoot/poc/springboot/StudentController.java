@@ -21,7 +21,7 @@ public class StudentController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Student> getStudentById(@PathVariable("id") Integer id) {
+    public Optional<Student> getStudentById(@PathVariable("id") long id) {
         return studentService.getStudentById(id);
     }
 
@@ -32,7 +32,7 @@ public class StudentController {
 
 
     @DeleteMapping("/{id}")
-    public void deleteStudent(@PathVariable Integer id) {
+    public void deleteStudent(@PathVariable long id) {
         studentService.deleteStudent(id);
     }
 }
