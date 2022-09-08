@@ -1,4 +1,7 @@
-package springBoot.poc.springboot;
+package springBoot.poc.springboot.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
@@ -18,6 +21,12 @@ public class Student {
 
     @Column(name = "department")
     private String department;
+
+    @Column(name="library_id")
+    private long libraryId;
+
+//    @Column(name="book_name")
+//    private  String bookName;
 
     public long getId() {
         return id;
@@ -48,4 +57,12 @@ public class Student {
     public void setDepartment(String department) {
         this.department = department;
     }
+
+    public long getLibraryId() { return libraryId; }
+
+    public void setLibraryId(long libraryId) { this.libraryId = libraryId; }
+
+//    public String getBookName() { return bookName; }
+//
+//    public void setBookName(String bookName) { this.bookName = bookName; }
 }
